@@ -1,0 +1,28 @@
+package b_hackerController;
+
+import javafx.application.Platform;
+import javafx.fxml.FXML;
+
+//b_hackerController.PalacPamControl
+//brain hacker
+public class PalacPamControl {
+	
+	private MainControl mainControl;
+	
+	@FXML
+	public void onBackMenu() {
+		mainControl.loadMenuScreen();
+		
+	}
+	
+	@FXML
+	public void onExit() {
+		Platform.exit();
+	}
+
+	public void setMainControl(MainControl mainControl) {
+		this.mainControl = mainControl;
+	}
+	
+
+}

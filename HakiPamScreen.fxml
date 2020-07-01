@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="b_hakerController.HakiPamControl">
+   <children>
+      <ImageView fitHeight="33.0" fitWidth="667.0" layoutX="11.0" layoutY="561.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/Dekor_2.png" />
+         </image>
+      </ImageView>
+      <TabPane layoutX="29.0" layoutY="57.0" prefHeight="507.0" prefWidth="648.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Intro">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="265.0" layoutY="31.0" text="Gruba baba trzyma nad głową dwie dzidy  i siedzi na dwóch krzesłach" />
+                        <VBox layoutX="5.0" layoutY="61.0" prefHeight="152.0" prefWidth="637.0" spacing="3.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="61.0">
+                           <children>
+                              <Label text="Haki pamięciowe to uniwersalne narzędzie mnemotechniczne do zapamietywania informacji, i nie wazne czy to liczby " />
+                              <Label text="czy też coś innego.  Koncepcja działania polega na tym ,ze mózg najlepiej sobie radzi z czyms konkretnym, a liczby jak" />
+                              <Label text="i cyfry są w zasadzie abstrakcyjne, a przez to niezbyt przez ten superkomputer lubiane. Z drugiej jednak strony mozna" />
+                              <Label text="&quot;spiąć  ze sobą &quot; powiedzmy cyfrę 4 z wyobrazeniem krzesła, ...i tajemnicza sprawa , od tej pory mozemy uzywac ich " />
+                              <Label text="nijako zamiennie. a właściwie jedno (krzesło) staje sie zamiennikiem dla drugiego (cyfry 4)...  " />
+                              <Label text="Ba!  dodajmy do tego dla jedynki dzidę, a dla ósemki grubą babę (p.s. nie chce nikigo obrazic , poprostu z jakiegoś " />
+                              <Label text="powodu te połączenie idealnie do siebie pasuje, ale dlaczego ma leginsy w kwiatki tego nie rozumiem...) " />
+                           </children>
+                           <padding>
+                              <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                           </padding>
+                        </VBox>
+                        <VBox layoutX="12.0" layoutY="248.0" prefHeight="157.0" prefWidth="624.0" spacing="3.0" AnchorPane.bottomAnchor="73.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="248.0">
+                           <children>
+                              <Label text="A propos...wyobraz sobie ten obrazek, bo co tu dużo kryć , wyobraźnia to klucz do sukcesu każdej tachniki mnemo-">
+                                 <padding>
+                                    <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                 </padding>
+                              </Label>
+                              <Label text="technicznej. Co więcej im te wyobrazenie dziwaczniejsze tym lepiej. Mózg poprostu to lubi..." />
+                              <Label />
+                              <Label text="Istnieja metody mnemotechniczne ,które mogą ci ułatwić stworzenie  i zapamietywanie twojego własnego zestawu " />
+                              <Label text="haków pamięciowych, bo dzieki temu ze jest stworzony przez Ciebie osobiście, będzie poprosu jajlepszy do " />
+                              <Label text="stosowania , ale i podsunienta w tej aplikacji tez da rade (nie zawsze się ma czas, lub ochote na domyślanie haków" />
+                              <Label text="wiem o tym i rozumiem, sam wole kod haków ktory znalazłem w internetach...)" />
+                           </children>
+                           <padding>
+                              <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                           </padding>
+                        </VBox>
+                        <Label layoutX="23.0" layoutY="222.0" text="... i znienacka ten dziwaczny tekst przestaje być taki nie na miejscu " />
+                        <Label layoutX="199.0" layoutY="5.0" prefHeight="17.0" prefWidth="69.0" text=" 11844 =......" />
+                        <ImageView fitHeight="86.0" fitWidth="91.0" layoutX="551.0" layoutY="378.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/Logo.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="480.0" fitWidth="648.0" layoutY="-2.0" opacity="0.13" pickOnBounds="true">
+                           <image>
+                              <Image url="@../image/Baki.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+            </content>
+               <graphic>
+                  <ImageView fitHeight="62.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Logo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+          </Tab>
+          <Tab text="Przykładowa tabelka">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" text="Mała tabelka przykładowych haków" />
+                        <GridPane gridLinesVisible="true" hgap="1.0" layoutX="18.0" layoutY="59.0" prefHeight="339.0" prefWidth="161.0" vgap="1.0" AnchorPane.leftAnchor="18.0" AnchorPane.topAnchor="59.0">
+                          <columnConstraints>
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="93.0" minWidth="10.0" prefWidth="33.0" />
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="158.0" minWidth="10.0" prefWidth="91.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label text="Cyfra" />
+                              <Label text="hak pamieciowy" GridPane.columnIndex="1" />
+                              <Label text="1" GridPane.rowIndex="1" />
+                              <Label text="Dzida" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Label text="2" GridPane.rowIndex="2" />
+                              <Label text="Łabądź" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Label text="3" GridPane.rowIndex="3" />
+                              <Label text="koci pyszczek" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <Label text="4" GridPane.rowIndex="4" />
+                              <Label text="Krzesło" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <Label text="5" GridPane.rowIndex="5" />
+                              <Label text="Haczyk " GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <Label text="6" GridPane.rowIndex="6" />
+                              <Label text="Ślimak" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                              <Label text="7" GridPane.rowIndex="7" />
+                              <Label text="Kosa" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                              <Label text="8" GridPane.rowIndex="8" />
+                              <Label text="Gruba Baba" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                              <Label text="9" GridPane.rowIndex="9" />
+                              <Label text="Balonik" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                              <Label text="0" GridPane.rowIndex="10" />
+                              <Label text="Jajko" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                           </children>
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </GridPane>
+                        <Label layoutX="188.0" layoutY="313.0" text="No dobra, może być tez bałwan..." />
+                        <VBox layoutX="323.0" layoutY="59.0" prefHeight="207.0" prefWidth="332.0" spacing="5.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="59.0">
+                           <children>
+                              <Label text="Najprzyjemniesza rzecz jest taka , że raz zapamiętane haki" />
+                              <Label text="zostają z Tobą na całe życie, czyli uczysz sie ich tylko raz" />
+                              <Label text="a pozytek na cale lata" />
+                              <Label text="Daj sobie tez czas na pobawienie sie nimi,zapamietanie" />
+                              <Label text="tak zeby bez trudu w pamieci łaczyć, jedno z drugim." />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                        <Label layoutX="6.0" layoutY="417.0" prefHeight="17.0" prefWidth="676.0" text="P.S 11844 nie ma zadnego znaczenia , poprostu miałem ją zapamietać , i tak zostało... od paru lat..." />
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="484.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/Logo.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="476.0" fitWidth="648.0" layoutX="-1.0" layoutY="1.0" opacity="0.13" pickOnBounds="true">
+                           <image>
+                              <Image url="@../image/Baki.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+           <Tab text="Przykładowa tabelka 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <HBox layoutX="22.0" layoutY="25.0" prefHeight="409.0" prefWidth="609.0" spacing="50.0" AnchorPane.bottomAnchor="44.0" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="25.0">
+                           <children>
+                              <GridPane gridLinesVisible="true" hgap="1.0" prefHeight="339.0" prefWidth="161.0" vgap="1.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="93.0" minWidth="10.0" prefWidth="40.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="158.0" minWidth="10.0" prefWidth="116.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label text="Cyfra" />
+                                    <Label text="hak pamieciowy" GridPane.columnIndex="1" />
+                                    <Label text="1" GridPane.rowIndex="1" />
+                                    <Label text="Swieczka" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Label text="2" GridPane.rowIndex="2" />
+                                    <Label text="Kaczka" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Label text="3" GridPane.rowIndex="3" />
+                                    <Label text="Serce" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <Label text="4" GridPane.rowIndex="4" />
+                                    <Label text="Samochodzik" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <Label text="5" GridPane.rowIndex="5" />
+                                    <Label text="Dłoń" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                    <Label text="6" GridPane.rowIndex="6" />
+                                    <Label text="Śliwka" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                    <Label text="7" GridPane.rowIndex="7" />
+                                    <Label text="Flaga" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                    <Label text="8" GridPane.rowIndex="8" />
+                                    <Label text="Klepsydra" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                    <Label text="9" GridPane.rowIndex="9" />
+                                    <Label text="Szpilka" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                    <Label text="0" GridPane.rowIndex="10" />
+                                    <Label text="Koło" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                 </padding>
+                              </GridPane>
+                              <GridPane gridLinesVisible="true" hgap="1.0" prefHeight="339.0" prefWidth="161.0" vgap="1.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="93.0" minWidth="10.0" prefWidth="49.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="158.0" minWidth="10.0" prefWidth="107.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="29.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label text="Cyfra" />
+                                    <Label text="hak pamieciowy" GridPane.columnIndex="1" />
+                                    <Label text="10" GridPane.rowIndex="1" />
+                                    <Label text="Kieszeń" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Label text="11" GridPane.rowIndex="2" />
+                                    <Label text="Grzyb" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Label text="12" GridPane.rowIndex="3" />
+                                    <Label text="Dratwa" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <Label text="13" GridPane.rowIndex="4" />
+                                    <Label text="Trzustka" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <Label text="14" GridPane.rowIndex="5" />
+                                    <Label text="Klinkiet" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                    <Label text="15" GridPane.rowIndex="6" />
+                                    <Label text="Pięta" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                    <Label text="16" GridPane.rowIndex="7" />
+                                    <Label text="Siewca" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                    <Label text="17" GridPane.rowIndex="8" />
+                                    <Label text="Daszek" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                    <Label text="18" GridPane.rowIndex="9" />
+                                    <Label text="Lustro" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                    <Label text="19" GridPane.rowIndex="10" />
+                                    <Label text="Znak Drogowy" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                 </padding>
+                              </GridPane>
+                              <GridPane gridLinesVisible="true" hgap="1.0" prefHeight="339.0" prefWidth="161.0" vgap="1.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="93.0" minWidth="10.0" prefWidth="40.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="158.0" minWidth="10.0" prefWidth="116.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="58.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="33.0" minHeight="0.0" prefHeight="33.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label text="Cyfra" />
+                                    <Label text="hak pamieciowy" GridPane.columnIndex="1" />
+                                    <Label text="20" GridPane.rowIndex="1" />
+                                    <Label text="Tarcza" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Label text="21" GridPane.rowIndex="2" />
+                                    <Label text="Pochodnia" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Label text="22" GridPane.rowIndex="3" />
+                                    <Label text="Wiatrowskaz" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <Label text="23" GridPane.rowIndex="4" />
+                                    <Label text="Plecak" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <Label text="24" GridPane.rowIndex="5" />
+                                    <Label text="Ławka" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                    <Label text="25" GridPane.rowIndex="6" />
+                                    <Label text="Bąbka Choinkowa" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                    <Label text="26" GridPane.rowIndex="7" />
+                                    <Label text="Ciasteczko" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                    <Label text="27" GridPane.rowIndex="8" />
+                                    <Label text="Skarpa" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                    <Label text="28" GridPane.rowIndex="9" />
+                                    <Label text="Kosz z owocami" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                    <Label text="29" GridPane.rowIndex="10" />
+                                    <Label text="Garnek z pokrywką" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                 </padding>
+                              </GridPane>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <ImageView fitHeight="478.0" fitWidth="654.0" layoutX="-4.0" opacity="0.13" pickOnBounds="true">
+                           <image>
+                              <Image url="@../image/Bakkgr.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+           <Tab text="A jak to działa ?">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="86.0" fitWidth="109.0" layoutX="548.0" layoutY="372.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/Dekor2.png" />
+                           </image>
+                        </ImageView>
+                        <VBox layoutX="8.0" layoutY="52.0" prefHeight="200.0" prefWidth="364.0" spacing="4.0">
+                           <children>
+                              <Label text="Pierwsze igrzyska olimpijskie - 776 p.n.e. " />
+                              <Label text="Założenie Rzymu przez Romulusa i Remusa -753 p.n.e. " />
+                              <Label text="Zabicie Juliusza Cezara- 44 p.n.e" />
+                              <Label text="Pożar Rzymu za Nerona - 64 r" />
+                              <Label text="Ucieczka Mahometa z Mekki do Medyny - 622r" />
+                              <Label text="„Biblia Gutenberga” -pierwsza książka wydana drukiem-1455 r" />
+                              <Label text="Chrzest Polski- 966r" />
+                              <Label text="Zjazd w Gnieźnie - 1000r " />
+                              <Label text="Bolesław Chrobry- 1025r" />
+                           </children>
+                           <padding>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </padding>
+                        </VBox>
+                        <Label layoutX="18.0" layoutY="17.0" text="Od kilka przykładowych liczb do zapamiętania ..(a nie te moje 11844...)" />
+                        <VBox layoutX="386.0" layoutY="52.0" prefHeight="200.0" prefWidth="253.0" spacing="4.0">
+                           <children>
+                              <Label text="Biegną dwie kosy a zanimi ślimak" />
+                              <Label text="Wilczyca karmi kose haczyk i duzego kota" />
+                              <Label text="Dwa krzesła a na nich dużo sztyletów..." />
+                              <Label text="Podpalony Ślimak na krześle (brr..)" />
+                              <Label text="Ślimak w turmanie goni dwa łabędzie" />
+                              <Label text="Dżida na krześle i dwa haczyki z niej wiszą" />
+                              <Label text="Niebieski balonik a na sznurku dwa ślimaki" />
+                              <Label text="Gniazdo a w nim dżida i trzy jajka" />
+                              <Label text="Korona na niej dżida jajko i łabądż z hakiem " />
+                           </children>
+                           <padding>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </padding>
+                        </VBox>
+                        <VBox layoutX="5.0" layoutY="331.0" prefHeight="41.0" prefWidth="638.0">
+                           <children>
+                              <Label text="To tylko moje małe przykłady . Tak właściwie najlepiej by było, stworzyć własne wyobrazenie , króre najbardzej pasują" />
+                              <Label text="do Twojej włąsnej logiki , bo takie właśnie będą dla Ciebie  idealne" />
+                           </children>
+                        </VBox>
+                        <ImageView fitHeight="480.0" fitWidth="648.0" layoutY="-1.0" opacity="0.21" pickOnBounds="true">
+                           <image>
+                              <Image url="@../image/Bakkgr.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="204.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/Logo.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Button contentDisplay="RIGHT" layoutX="598.0" layoutY="12.0" mnemonicParsing="false" onAction="#onExit" prefHeight="31.0" prefWidth="74.0" text="Exit">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Ik_exi.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Label layoutX="98.0" layoutY="13.0" text="brain hacker" textFill="#d7a530">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="266.0" layoutY="16.0" text="Haki Na Pamięć " textFill="#f2dc3a">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="20.0" layoutY="560.0" prefHeight="8.0" prefWidth="667.0" />
+      <Label layoutX="597.0" layoutY="578.0" text="Tomasz Mianecki" />
+      <Button contentDisplay="RIGHT" layoutX="512.0" layoutY="13.0" mnemonicParsing="false" onAction="#onBackMenu" text="Menu">
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Ik_M.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <ImageView fitHeight="63.0" fitWidth="49.0" layoutX="20.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

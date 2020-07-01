@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="b_hakerController.PalacPamControl">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="706.0" layoutX="5.0" layoutY="-1.0" nodeOrientation="RIGHT_TO_LEFT" opacity="0.15" pickOnBounds="true">
+         <image>
+            <Image url="@../image/Baki.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="114.0" layoutY="25.0" text="brain hacker" textFill="#cfc148">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button contentDisplay="RIGHT" layoutX="613.0" layoutY="24.0" mnemonicParsing="false" onAction="#onExit" prefHeight="37.0" prefWidth="73.0" text="Exit">
+         <graphic>
+            <ImageView fitHeight="51.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Ik_exi.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button contentDisplay="RIGHT" layoutX="521.0" layoutY="24.0" mnemonicParsing="false" onAction="#onBackMenu" text="Menu">
+         <graphic>
+            <ImageView fitHeight="47.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Ik_M.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Label layoutX="283.0" layoutY="27.0" text="Pałac Pamięci" textFill="#bfba1d">
+         <font>
+            <Font size="21.0" />
+         </font></Label>
+      <VBox alignment="CENTER" layoutX="27.0" layoutY="78.0" prefHeight="94.0" prefWidth="648.0" spacing="3.0">
+         <children>
+            <Label text="Metoda loci.  Jedna z najstarszych technik do zapamiętywania, która liczy sobie tysiąclecia" />
+            <Label text="Szłyszałeś kiedyś jak ludzie mówia NA PIERWSZYM MIEJSCU, albo na DRUGIM MIEJSCU ?" />
+            <Label text="To właśnie dla tego ;-) Ta technika pomaga zapamiętywać ogromne ilości informacji, i tak naprawde tródno powiedzieć " />
+            <Label text="czy ma jakieś granice... Chyba nikt nigdy tam nie dotarł. A powoiedzieć trzeba ze to jedna z ulubionych technik " />
+            <Label text="rekordzistów  Guinnessa (szczególnie lubują się w liczbie pi ) " />
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </VBox>
+      <Label layoutX="31.0" layoutY="188.0" text="Więc może czas zbudowac swój własny Pałac ..?" />
+      <TabPane layoutX="27.0" layoutY="215.0" prefHeight="320.0" prefWidth="648.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Pierwsze kroki">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox layoutX="11.0" layoutY="14.0" prefHeight="94.0" prefWidth="626.0">
+                           <children>
+                              <Label text="Projekt">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Wyobraź sobie doskonale Ci znane miejsce i &quot;dorysuj&quot; tam &quot;obrazek&quot; (albo dwa, albo tyle ile trzeba,) w określonym " />
+                              <Label text="punkcie , i kiedy przemierzasz w myślach to miejsce , automatycznie przypominasz sobie te obrazki, w tym punkcie co" />
+                              <Label text=" chciałes/aś , i to w debrej kolejności !" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="12.0" layoutY="120.0" prefHeight="141.0" prefWidth="625.0">
+                           <children>
+                              <Label text="Cement">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="To pierwszy Pałac ? Tak ? To bez PRZESADY! Ja  wiem ze korci machnąć sobie rezydencje godnej Waszej Wysokosci" />
+                              <Label text="ale nie ma odpowiedniej obsługi do właściwego działania  tejze posiadłości, i nim sie człowiek zorietuje, popada w " />
+                              <Label text="ruine  , ten nasz skromny stwór." />
+                              <Label text="Najlepie zacząc  od swojego pokoju. Zamknij oczy i wyobraz go sobie tak dokładnie jak sie da, ze najdrobnieszymi " />
+                              <Label text="szczegulikami" />
+                              <Label text="Już? To cement chwycił, gratulacje to twój pierwszy pałac pamięci !" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Logo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+          </Tab>
+          <Tab text="Następne kroki">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox layoutX="7.0" layoutY="14.0" prefHeight="80.0" prefWidth="632.0" spacing="5.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="9.0">
+                           <children>
+                              <Label text="Cegiełki">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Czas na punkty zapisu, czyli gdzie będa zbunkrowane nasze informacje do zapamiętania, 10 sztuk takowych na " />
+                              <Label text="początek wystarczy. Miejsca tych punktów powinny być łatwe zauważalne, .. lózko, szafa ,okno, biórko itp,itd" />
+                           </children></VBox>
+                        <VBox layoutX="7.0" layoutY="110.0" prefHeight="112.0" prefWidth="632.0" spacing="5.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="9.0">
+                           <children>
+                              <Label text="Umeblowanie">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="A tak właściwie co mijasz , jaką masz trase , albo lepiej , co i w jakiej kolejnosi mijasz idąc gdzieś, to gdzie teterminuje " />
+                              <Label text="co chcesz zapamiętać ,..niemalze podpinasz pod swoją trase to co zapamiętasz . Poprosu cuda..." />
+                              <Label text="Nie wierzysz ? A jak często bywasz na autopilocie ? Albo ile rzeczy , które robisz ,robisz w 100% Świadomie ?" />
+                              <Label text="Ile razy wróciłeś do domu, a niewiesz jek to się stało (powody sobie darujemy no nie ?)" />
+                           </children>
+                           <padding>
+                              <Insets top="4.0" />
+                           </padding>
+                        </VBox>
+                        <Label layoutX="323.0" layoutY="238.0" text="A ile razy przyszłeś do pokoju, i nie wiedziałeś dlaczego ???" />
+                        <Label layoutX="479.0" layoutY="255.0" text="Ewidetnie jakiś error systemu ..." />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+           <Tab text="i vio'la !">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox layoutX="14.0" layoutY="14.0" prefHeight="93.0" prefWidth="473.0" AnchorPane.bottomAnchor="184.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="161.0" AnchorPane.topAnchor="14.0">
+                           <children>
+                              <Label text="Pałac gotowy !">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text=".. i co teraz ? co ja mam z tym Czymś zrobić  ??  Gdzie znajde instrukcjie obsłógi ?" />
+                              <Label text="Dobra , przyznaje ,mały wstęp się należy " />
+                              <Label text="W pałacu można ulokować co sie chce, ale w ramach małego szkolenia przykładzik  :" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="59.0" layoutY="116.0" prefHeight="123.0" prefWidth="482.0" spacing="5.0" AnchorPane.bottomAnchor="52.0" AnchorPane.leftAnchor="59.0" AnchorPane.rightAnchor="107.0" AnchorPane.topAnchor="116.0">
+                           <children>
+                              <Label text="Powiedz ze mamy misję , kupić BARDZO PILNE STAFY , .. bo powody" textFill="#479023" />
+                              <Label text="oto i one Banany, kawa, majonez, jajka , proszek do prania, żel pod prysznic," textFill="#479023" />
+                              <Label text="Najpierw banan  jest klamka do dźwi, na krześle ogromne worki kawy (w tym pare ziaren" textFill="#479023" />
+                              <Label text="na podłoge spadło), moje całe okno ktoś wymajonezował, wielka kałuża żelu pod moim " textFill="#479023" />
+                              <Label text=" łózkiem(jeszcze bombelki na nim),a na nim kura se jajka wysiaduje(i gdacze jak to kura)" textFill="#479023" />
+                              <Label text="A pod biórkiem z jakiegos nieznanego powodu pralka ksiązki pierze..." textFill="#479023" />
+                           </children>
+                           <padding>
+                              <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                           </padding>
+                        </VBox>
+                        <Label layoutX="237.0" layoutY="260.0" text="Takie coś trudno zapomnieć, i oto chodzi :-)" textFill="#82246f">
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </Label>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <ImageView fitHeight="87.0" fitWidth="116.0" layoutX="27.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="265.0" layoutY="565.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Dekor_2.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

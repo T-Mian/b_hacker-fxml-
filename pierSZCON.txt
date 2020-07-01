@@ -1,0 +1,89 @@
+package b_hackerController;
+
+import java.util.Random;
+
+import javafx.application.Platform;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+
+// b_hackerController.PierwSzesControl
+
+public class PierwSzesControl {
+	
+	private MainControl mainControl;
+	
+	@FXML
+	private Label wylosowany;
+
+	
+	@FXML
+	private Label ukryty2;
+	
+
+	@FXML
+	private Label labelodpowiedzi;
+	
+	@FXML
+	private TextField kk1;
+	
+	@FXML
+	private TextField kk2;
+	
+	@FXML
+	private TextField kk3;
+	
+	@FXML
+	private TextField odpowiedz;
+	
+	@FXML
+	private Button btnWylos;
+	
+	@FXML
+	private Button btnSpr;
+	
+	// do losowania szeœciennego
+	@FXML
+	public void  onLosujdwa() {
+		Random random = new Random();
+		int numer= 0;
+		String ukrytaString= "";
+		numer = random.nextInt(89) + 10;
+		ukrytaString+=numer;
+		ukryty2.setText(ukrytaString);
+		numer= numer*numer*numer;
+		String wylosowanaString= "";
+		wylosowanaString+=numer;
+		wylosowany.setText(wylosowanaString);
+		kk1.clear();
+		kk2.clear();
+		kk3.clear();
+		odpowiedz.clear();
+		labelodpowiedzi.setText(" . . . ");
+		
+	}
+	@FXML
+	public void  onSprawdz() {
+		String gammaString = ukryty2.getText();
+		labelodpowiedzi.setText(gammaString);
+	}
+	
+	
+	@FXML
+	public void onBackMenu() {
+		mainControl.loadMenuScreen();
+		
+	}
+	
+	@FXML
+	public void onExit() {
+		Platform.exit();
+		
+	}
+
+	public void setMainControl(MainControl mainControl) {
+		this.mainControl = mainControl;
+	}
+
+}

@@ -1,0 +1,152 @@
+package b_hackerController;
+
+import java.io.IOException;
+
+import javafx.application.Platform;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.layout.Pane;
+
+// b_hackerController.MenuControler
+
+public class MenuControler {
+	
+	private MainControl mainControl;
+	
+	@FXML
+	public void onPierwKwadr() {
+		FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/PierwiastekKwadratowyScreen.fxml"));
+		Pane pane= null;
+		try {
+			pane = loader.load();
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+		PierwiastekKwadratowyControl pierwiastekKwadratowyControl = loader.getController();
+		pierwiastekKwadratowyControl.setMainControl(mainControl);
+		mainControl.setScreen(pane);
+	}
+
+	@FXML
+	public void onPierwSzes() {
+		FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/PierwSzescScreen.fxml"));
+		Pane pane= null;
+		try {
+			pane = loader.load();
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+		PierwSzesControl pierwSzesControl=loader.getController();
+		pierwSzesControl.setMainControl(mainControl);
+		mainControl.setScreen(pane);
+		
+	}
+	
+	@FXML
+	public void onPierwPiatStop() {
+		FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/PierwPiatStScreen.fxml"));
+		Pane pane = null;
+		try {
+			pane=loader.load();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		PierwPiatStControl pierwPiatStControl = loader.getController();
+		pierwPiatStControl.setMainControl(mainControl);
+		mainControl.setScreen(pane);
+	}
+	
+
+	@FXML
+	public void onHakiPamieci() {
+		FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/HakiPamScreen.fxml"));
+		Pane pane = null;
+		try {
+			pane=loader.load();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		HakiPamControl hakiPamControl = loader.getController();
+		hakiPamControl.setMainControl(mainControl);
+		mainControl.setScreen(pane);
+	}
+	
+	@FXML
+	public void onPalacPamieci() {
+		FXMLLoader loader =new FXMLLoader(this.getClass().getResource("/fxml/PalacPamScreen.fxml"));
+		Pane pane= null;
+		try {
+			pane = loader.load();
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+		PalacPamControl palacPamControl = loader.getController();
+		palacPamControl.setMainControl(mainControl);
+		mainControl.setScreen(pane);
+	}
+
+	@FXML
+	public void onPOA() {
+		FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/POAScreen.fxml"));
+		Pane pane=null;
+		try {
+			pane= loader.load();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		POAControl poaControl = loader.getController();
+		poaControl.setMainControl(mainControl);
+		mainControl.setScreen(pane);
+	}
+	
+	
+	@FXML
+	public void onPoliczInaczej() {
+		FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/PoliczInScreen.fxml"));
+		Pane pane=null;
+		try {
+			pane= loader.load();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		PoliczInControl policzInControl = loader.getController();
+		policzInControl.setMainControl(mainControl);
+		mainControl.setScreen(pane);
+	}
+	
+	@FXML
+	public void onMnozPrzezKreski() {
+		FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/MnozLinieScreen.fxml"));
+		Pane pane=null;
+		try {
+			pane= loader.load();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		MnozLinieControl mnozLinieControl = loader.getController();
+		mnozLinieControl.setMainControl(mainControl);
+		mainControl.setScreen(pane);
+	}
+	
+	public void onExt() {
+		Platform.exit();
+		
+	}
+
+	public void setMainControl(MainControl mainControl) {
+		this.mainControl= mainControl;
+		
+	}
+	
+	
+	
+}

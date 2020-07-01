@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="596.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="b_hakerController.PoliczInControl">
+   <children>
+      <Label layoutX="82.0" layoutY="14.0" text="brain hacker" textFill="#d7a93e">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button contentDisplay="RIGHT" layoutX="617.0" layoutY="13.0" mnemonicParsing="false" onAction="#onExit" prefHeight="38.0" prefWidth="69.0" text="Exit">
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Ik_exi.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button contentDisplay="RIGHT" layoutX="517.0" layoutY="13.0" mnemonicParsing="false" onAction="#onBackMenu" prefHeight="32.0" prefWidth="84.0" text="Menu">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Ik_M.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <TabPane layoutX="14.0" layoutY="69.0" prefHeight="520.0" prefWidth="662.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Jak sklepikarz">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="487.0" prefWidth="662.0">
+                     <children>
+                        <VBox layoutX="17.0" layoutY="14.0" prefHeight="73.0" prefWidth="631.0">
+                           <children>
+                              <Label text="Dawno dawno temu" />
+                              <Label text="Kiedy komputery były wielkie jak hala do piłki nożnej. a kalkulatory nie jeszcze nie istniały (no.. protokalkulatory były)" />
+                              <Label text="sklepikarze musiali sobie jakoś radzić , i o ile z dodawaniem nikt nigdy nie mniał problemów , to juz odjąz coś " />
+                              <Label text="ze stanu posiadania (boli do dziś), to jednak gorzej szło.Więc z konieczności wymyślili odejmowanie na odwrót" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="17.0" layoutY="114.0" prefHeight="191.0" prefWidth="627.0">
+                           <children>
+                              <Label text="Odejmowanie na odwrót miało ta zalete , ze trudno było się pomylić,a wprawiony człowiek liczył naprawdę szybko." />
+                              <Label />
+                              <Label text="Cała technika opierała się na zasadzie ,wychodzenia od najmniejszej liczby, do największej" />
+                              <Label text="Label" />
+                              <Label text="1 . Uzupełnij odejmowana liczbe, zaokrąglając ją" />
+                              <Label text="Label" />
+                              <Label text="2 . Do tejgo zaokraglenia dodaj najbliższa zaokrsągloną liczbe,ale tak aby ją nie przekroczyć" />
+                              <Label text="Label" />
+                              <Label text="3 . Uzupełnij wynik, aby dostać dokładnie swoją liczbe startową" />
+                              <Label text="Label" />
+                              <Label text="4 . Zsumuj te trzy etapy" />
+                           </children>
+                        </VBox>
+                        <Label layoutX="260.0" layoutY="297.0" text="Ech ,niewiele to mówi , to czasz na przykład" />
+                        <Label layoutX="17.0" layoutY="314.0" text="366 - 39" />
+                        <VBox layoutX="17.0" layoutY="342.0" prefHeight="122.0" prefWidth="527.0" spacing="7.0">
+                           <children>
+                              <Label text="pn1. Zaokraglam 39+1=40" />
+                              <Label text="pn.2. Dodaje drugiego zaokraglaka (ale nie przekraczam 366) : 40+320= 360" />
+                              <Label text="pn.3. Uzupełniam to co brakuje : 360 +6 = 366" />
+                              <Label text="pn.4. Zsumuje to co zrobiłem : 1 +320 +6 =327" />
+                              <Label text="I tyle " />
+                           </children>
+                        </VBox>
+                        <ImageView fitHeight="495.0" fitWidth="671.0" layoutX="-3.0" layoutY="-1.0" nodeOrientation="RIGHT_TO_LEFT" opacity="0.11" pickOnBounds="true">
+                           <image>
+                              <Image url="@../image/Bakkgr.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="498.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/Dekor2.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+            </content>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Logo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+          </Tab>
+          <Tab text="Dodawanie nie tak jak zwykle...">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="495.0" fitWidth="671.0" layoutX="-5.0" layoutY="-3.0" opacity="0.07" pickOnBounds="true">
+                           <image>
+                              <Image url="@../image/Baki.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="14.0" layoutY="14.0" text="Mam pytanie , gdybym chciał zebyś zsumował 132 , 157, 593 jak bys to zrobil ( na papierze.. ) Pewnie coś takiego" />
+                        <VBox alignment="CENTER" layoutX="14.0" layoutY="35.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="81.0" prefWidth="70.0">
+                           <children>
+                              <Label text="132">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="157">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="593">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Separator layoutX="14.0" layoutY="113.0" prefHeight="6.0" prefWidth="71.0" />
+                        <Label layoutX="14.0" layoutY="137.0" text="Wpierw suma jednostek, 2 pod kreską a 1 w pamięci, następnie dziesiątki, dorzucisz z pamieci jedynke i masz 8 podkreską" />
+                        <Label layoutX="14.0" layoutY="154.0" text="i jeden w pamieci. i wreście czas na setki, 7 plus w pamieci i zrobione, wynik 882... wiesz ze liczyłes z prawej do lewej." />
+                        <Label layoutX="14.0" layoutY="187.0" text="A gdyby tak zmienic stronę  ?" textFill="#739a10">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <VBox layoutX="5.0" layoutY="223.0" prefHeight="109.0" prefWidth="632.0">
+                           <children>
+                              <Label text="....Jak najbardzej się da !!" />
+                              <Label text="Co wiecej , są trzy korzyści z tego.." />
+                              <Label text=" &gt;&gt;łatwiej jest liczyć w pamieci" />
+                              <Label text=" &gt;&gt;możesz być pewny w stu procentach wyniku" />
+                              <Label text=" &gt;&gt; niczego nie zachowujesz w pamieci(więc sie nie pomylisz przez to)" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="14.0" layoutY="314.0" prefHeight="85.0" prefWidth="130.0">
+                           <children>
+                              <Label text="Ten sam przykład" />
+                              <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="81.0" prefWidth="70.0">
+                                 <children>
+                                    <Label text="132">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="157">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="593">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <Separator layoutX="34.0" layoutY="411.0" prefHeight="9.0" prefWidth="90.0" />
+                        <Label layoutX="130.0" layoutY="332.0" text="tym razem startuj od najwyzszej jedynki z lewej" />
+                        <Label layoutX="198.0" layoutY="355.0" text="1+1+5=7" />
+                        <Label layoutX="130.0" layoutY="372.0" text="koniec setek , do cyfry 7 &quot;doklej&quot; 3(na górze i z lewej)" />
+                        <Label layoutX="130.0" layoutY="389.0" text="teraz masz 73, i teraz zejdź w doł dodajac następne cyfry ponizej" />
+                        <Label layoutX="133.0" layoutY="410.0" text="i teraz masz 87, (tak , jedynke  m wchłonąć )" />
+                        <Label layoutX="130.0" layoutY="427.0" text="doklejasz kolejną liczbę , i teraz masz 872" />
+                        <Label layoutX="130.0" layoutY="444.0" text="i teraz masz 882.  Każde doklejanie eliminuje zapamietywanie liczb" />
+                        <Label layoutX="422.0" layoutY="461.0" text="Wynik taki sam" />
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="221.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/Dekor_2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="231.0" layoutY="206.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/Dekor_2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="132.0" fitWidth="69.0" layoutX="594.0" layoutY="418.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/Dekor1.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Label layoutX="238.0" layoutY="16.0" text="Jak to policzyć innaczej" textFill="#a88c12">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="66.0" fitWidth="61.0" layoutX="14.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

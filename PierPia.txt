@@ -1,0 +1,98 @@
+package b_hackerController;
+
+import java.util.Random;
+
+import javafx.application.Platform;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.GridPane;
+
+// b_hackerController.PierwPiatStScreen
+
+public class PierwPiatStControl {
+	
+	private MainControl mainControl;
+	
+	@FXML
+	private Label skrytyWynik;
+	
+	@FXML
+	private Label wylosowanalabel;
+	
+	@FXML
+	private Label wynikLabel;
+	
+	@FXML
+	private TextField kat1;
+
+	@FXML
+	private TextField odp;
+	
+	@FXML
+	private Button wylosujbtn;
+	
+	@FXML
+	private GridPane grid_1;
+	
+	@FXML
+	public void onBackMenu() {
+		
+		mainControl.loadMenuScreen();
+		
+	}
+	
+	
+	@FXML
+	public void onExit() {
+		Platform.exit();
+	}
+
+	
+	public void onPotenguj() {
+		Random random= new Random();
+		int num= 0;
+		String ukrytyString="";
+		num= random.nextInt(89)+10;
+		ukrytyString+=num;
+		num= num*num*num*num*num;
+		String losString ="";
+		losString+=num;
+		skrytyWynik.setText(ukrytyString);
+		wylosowanalabel.setText(losString);
+		kat1.clear();
+		odp.clear();
+		wynikLabel.setText(" . . . ");
+		
+		
+		
+		}
+	
+	public void onPokarz() {
+		String pokaString= skrytyWynik.getText();
+		wynikLabel.setText(pokaString);
+		
+	}
+	
+	public void onUjawnij() {
+		int wid = 150;
+		int hei = 230;
+		int cww = 23;
+		int dhh= 95;
+		int s =1;
+		 s+=1;
+		if ((s/2)== 0 ) {
+			
+			grid_1.setPrefSize(cww, dhh);
+		}else {
+			grid_1.setPrefSize(wid, hei);
+		}
+	
+	}
+
+	public void setMainControl(MainControl mainControl) {
+		this.mainControl = mainControl;
+	}
+
+}

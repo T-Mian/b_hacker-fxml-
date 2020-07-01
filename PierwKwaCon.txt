@@ -1,0 +1,86 @@
+package b_hackerController;
+
+import java.util.Random;
+
+import javafx.application.Platform;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+
+// b_hackerController.PierwiastekKwadratowyControl
+
+public class PierwiastekKwadratowyControl {
+	
+	private MainControl mainControl;
+	
+	
+	@FXML 
+	private Label wylosowana;
+	
+	@FXML
+	private Label boks;
+	
+	
+	@FXML 
+	private Label ukryty;
+	@FXML
+	private Button btnWylosuj;
+	
+	@FXML 
+	private TextField odpowWyloso;
+	
+	@FXML 
+	private TextField kod1;
+	
+	@FXML 
+	private TextField kod2;
+	
+	@FXML 
+	private TextField kod3;
+	
+	
+	@FXML
+	public void onBackMenu() {
+		mainControl.loadMenuScreen();
+		
+	}
+	
+	@FXML
+	public void onExit() {
+		Platform.exit();
+		
+	}
+	
+	public void onPotenga() {
+		Random random = new Random();
+		int numer = 0 ;
+		String gagaString = "";
+		numer = random.nextInt(99);
+		gagaString+=numer;
+		numer=numer*numer;
+		String alfaString= "";
+		ukryty.setText(gagaString);
+		wylosowana.setText(alfaString+numer);
+		odpowWyloso.clear();
+		kod1.clear();
+		kod2.clear();
+		kod3.clear();
+		boks.setText(". . .");
+	}
+	
+	
+
+	public void onSprawdz() {
+		
+		String gammaString = ukryty.getText();
+		boks.setText(gammaString);
+		
+		}
+
+	public void setMainControl(MainControl mainControl) {
+		this.mainControl = mainControl;
+	}
+
+
+}

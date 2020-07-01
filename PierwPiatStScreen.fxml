@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="b_hakerController.PierwPiatStControl">
+   <children>
+      <TabPane layoutX="31.0" layoutY="68.0" prefHeight="505.0" prefWidth="649.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Intro">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="475.0" fitWidth="669.0" layoutX="-5.0" layoutY="1.0" opacity="0.07" pickOnBounds="true">
+                           <image>
+                              <Image url="@../image/Baki.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="15.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No to teraz czas na pierwiastek piątego stopnia , i tak prawde mówiac bedzie prościej , znowu.." />
+                        <Label layoutX="14.0" layoutY="38.0" text="Tak to chyba juz jest , ze to co zazwyczaj jest trudne , z dobrą metodą staje się zabawnie łatwe.." />
+                        <Label layoutX="14.0" layoutY="55.0" text="I tym razem przeda sie tablica z wartosciami, ale tym razem ,mamy tu mały myk, bowiem zastosujemy zaokraglenia" />
+                        <GridPane layoutX="23.0" layoutY="85.0" prefHeight="298.0" prefWidth="96.0">
+                          <columnConstraints>
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label text="3" textFill="#360fb9" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="1000" textFill="#360fb9" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="2" textFill="#360fb9" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="250" textFill="#360fb9" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="1" textFill="#360fb9" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="30" textFill="#360fb9" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="4" textFill="#360fb9" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="5" textFill="#360fb9" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="6" textFill="#360fb9" GridPane.rowIndex="6">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="3000" textFill="#360fb9" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="17.000" textFill="#360fb9" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="32.000" textFill="#360fb9" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="7" textFill="#360fb9" GridPane.rowIndex="7">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="60.000" textFill="#360fb9" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="8" textFill="#360fb9" GridPane.rowIndex="8">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="1" textFill="#360fb9" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="9" textFill="#360fb9" GridPane.rowIndex="9">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="8000" textFill="#360fb9" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="0" textFill="#360fb9">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="0" textFill="#360fb9" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </GridPane>
+                        <Label layoutX="14.0" layoutY="390.0" text="Prawda ze łatwiej zapamiętać ?" />
+                        <VBox layoutX="119.0" layoutY="85.0" prefHeight="93.0" prefWidth="321.0">
+                           <children>
+                              <Label text="Teraz jakaś dużą liczba ... 5.153.632" />
+                              <Label text="Punkt 1 Cyfa Jednosci" />
+                              <Label text="No teraz bedzie łatwo , popatrz na Ostatnia Cyfre..." />
+                              <Label text="i prosze , nasz pierwiastek ma Taką samą Cyfre Jedności..." />
+                              <Label text="Ufff ale męczące" />
+                           </children>
+                        </VBox>
+                        <Label layoutX="280.0" layoutY="178.0" text="Gotowy na Cyfre dziesiątek ?" />
+                        <GridPane layoutX="492.0" layoutY="101.0" prefHeight="316.0" prefWidth="133.0">
+                           <columnConstraints>
+                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="30.0" minHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label text="3" textFill="#360fb9" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="1000" textFill="#360fb9" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="2" textFill="#360fb9" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="250" textFill="#360fb9" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="1" textFill="#360fb9" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="30" textFill="#360fb9" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="4" textFill="#360fb9" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="5" textFill="#360fb9" GridPane.rowIndex="6">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="6" textFill="#360fb9" GridPane.rowIndex="7">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="3000" textFill="#360fb9" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="17.000" textFill="#360fb9" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="32.000" textFill="#360fb9" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="7" textFill="#360fb9" GridPane.rowIndex="8">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="60.000" textFill="#360fb9" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="8" textFill="#360fb9" GridPane.rowIndex="9">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="1" textFill="#360fb9" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="19.0" prefWidth="12.0" text="9" textFill="#360fb9" GridPane.rowIndex="10">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="8000" textFill="#360fb9" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="0" textFill="#360fb9">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="0" textFill="#360fb9" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </GridPane>
+                        <VBox layoutX="178.0" layoutY="216.0" prefHeight="171.0" prefWidth="256.0">
+                           <children>
+                              <Label text="&quot;Usuń &quot; pięć cyfr ,licząc od prawej, i zobacz " />
+                              <Label text="Co zostanie (jedna , dwie lub trzy cyfry) " />
+                              <Label text="to bedzie nam potrzebne ,noi troche wyobraźni" />
+                              <Label text="W naszym przypadku zostały dwie liczby" />
+                              <Label text="51" textFill="#9e1d1d">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label text="I wpasuwujemy je do kolejki" />
+                              <Label text="Wybieramy mniejsza z nich w tym przypadku 2" />
+                              <Label prefHeight="17.0" prefWidth="240.0" text="I posze bardzo , pierwiastek piątego stopnia" />
+                              <Label text="wynosi" />
+                           </children>
+                        </VBox>
+                        <Label layoutX="547.0" layoutY="187.0" prefHeight="30.0" prefWidth="205.0" text="51" textFill="#9e1d1d">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="262.0" layoutY="394.0" text="22" textFill="#178628">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+            </content>
+               <graphic>
+                  <ImageView fitHeight="57.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Logo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+          </Tab>
+          <Tab text="Czas na mały trening">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="477.0" fitWidth="649.0" layoutX="4.0" layoutY="-1.0" nodeOrientation="RIGHT_TO_LEFT" opacity="0.25" pickOnBounds="true">
+                           <image>
+                              <Image url="@../image/Baki.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="14.0" layoutY="27.0" text="Dla reguły dałbym tu brudnopisik do nauki ..." />
+                        <Label layoutX="14.0" layoutY="44.0" text="Ale co tu jest takiego trudnego" />
+                        <Label fx:id="skrytyWynik" layoutX="14.0" layoutY="460.0" prefHeight="2.0" prefWidth="1.0">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="wylosowanalabel" layoutX="96.0" layoutY="169.0" text="..." />
+                        <Button layoutX="84.0" layoutY="131.0" mnemonicParsing="false" onAction="#onPotenguj" text="Wylosuj">
+                           <textFill>
+                              <RadialGradient centerX="0.5" centerY="0.35714285714285715" radius="0.5">
+                                 <stops>
+                                    <Stop color="BLACK" />
+                                    <Stop color="#bf3c1f" offset="0.5360824742268041" />
+                                    <Stop color="#b91a81" offset="1.0" />
+                                 </stops>
+                              </RadialGradient>
+                           </textFill></Button>
+                        <TextField fx:id="kat1" layoutX="178.0" layoutY="140.0" promptText="cyfra jednosci" />
+                        <TextField fx:id="odp" layoutX="178.0" layoutY="178.0" promptText="Odpowiedż" />
+                        <Button layoutX="327.0" layoutY="226.0" mnemonicParsing="false" onAction="#onPokarz" text="Pokaz">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <textFill>
+                              <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                                 <stops>
+                                    <Stop color="BLACK" />
+                                    <Stop color="#5c45b0e2" offset="0.5360824742268041" />
+                                    <Stop color="#b2458c" offset="1.0" />
+                                 </stops>
+                              </RadialGradient>
+                           </textFill></Button>
+                        <Label fx:id="wynikLabel" layoutX="230.0" layoutY="216.0" text=" . . . ">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <GridPane fx:id="grid_1" layoutX="565.0" layoutY="60.0" prefHeight="143.0" prefWidth="13.0">
+                           <columnConstraints>
+                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="87.0" minWidth="10.0" prefWidth="78.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label text="1000" textFill="#360fb9" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="250" textFill="#360fb9" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="30" textFill="#360fb9" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="3000" textFill="#360fb9" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="17.000" textFill="#360fb9" GridPane.rowIndex="7">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="32.000" textFill="#360fb9" GridPane.rowIndex="8">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="60.000" textFill="#360fb9" GridPane.rowIndex="9">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="1" textFill="#360fb9" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="8000" textFill="#360fb9" GridPane.rowIndex="6">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="0" textFill="#360fb9">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </GridPane>
+                        <ToggleButton layoutX="537.0" layoutY="15.0" mnemonicParsing="false" onAction="#onUjawnij" onMouseExited="#onMyszonIdzie" text="Podpowiedź" underline="true" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="15.0">
+                           <textFill>
+                              <LinearGradient endX="0.780952380952381" endY="1.0" startX="0.1380952380952381" startY="0.24285714285714285">
+                                 <stops>
+                                    <Stop color="#2258ae" />
+                                    <Stop color="#d78170" offset="0.5360824742268041" />
+                                    <Stop color="#b81c33" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill></ToggleButton>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Label layoutX="86.0" layoutY="17.0" text="brain hacker" textFill="#ae881d">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button contentDisplay="RIGHT" layoutX="609.0" layoutY="16.0" mnemonicParsing="false" onAction="#onExit" text="Exit">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Ik_exi.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button contentDisplay="RIGHT" layoutX="520.0" layoutY="16.0" mnemonicParsing="false" onAction="#onBackMenu" prefHeight="32.0" prefWidth="78.0" text="Menu">
+         <graphic>
+            <ImageView fitHeight="29.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Ik_M.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Label layoutX="229.0" layoutY="16.0" text="Pierwiastek Piątego stopnia" textFill="#a4a01d">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="58.0" fitWidth="76.0" layoutX="14.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="316.0" layoutX="23.0" layoutY="559.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true">
+         <image>
+            <Image url="@../image/Dekor_2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="365.0" layoutX="334.0" layoutY="561.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/Dekor_2.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
